@@ -5,8 +5,12 @@ module Api
           namespace :test do
             desc 'Client List'
             get do
-              status 200
-              'Hello'
+              if authenticate
+                status 200
+                'Hello'
+              else
+                status 400
+              end
             end
           end
         end

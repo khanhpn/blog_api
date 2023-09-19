@@ -60,6 +60,7 @@ group :development do
   gem 'grape-swagger-entity'
   gem 'grape-swagger-rails'
   gem 'grape-swagger-representable'
+  gem 'byebug'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -84,3 +85,9 @@ end
 gem 'grape', '~> 1.7', '>= 1.7.1'
 gem 'grape_on_rails_routes', '~> 0.3.2'
 gem 'grape-entity', '~> 1.0'
+
+# Gem authentication
+gem 'jwt', '~> 2.7', '>= 2.7.1'
+gem 'bcrypt', '~> 3.1', '>= 3.1.19'
+
+
