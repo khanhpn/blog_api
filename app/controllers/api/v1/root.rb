@@ -13,11 +13,13 @@ module Api
               if user
                 @current_user ||= user
               end
+            else
+              error!("không có quyền", 403)
             end
           end
-  
+
           def authenticate
-            current_user
+            current_user || error!("không có quyền", 403)
           end
         end
 

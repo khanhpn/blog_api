@@ -6,6 +6,8 @@ module Api
 
         mount Api::V1::CategoryApi::CategoryCreate
         mount Api::V1::CategoryApi::CategoryList
+        mount Api::V1::CategoryApi::CategoryUpdate
+        mount Api::V1::CategoryApi::CategoryDelete
       end
     end
   end
