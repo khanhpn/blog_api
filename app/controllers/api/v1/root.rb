@@ -26,6 +26,7 @@ module Api
         mount Api::V1::TestApi::Test
         mount Api::V1::Authorization::Root
         mount Api::V1::CategoryApi::Root
+        mount Api::V1::ArticleApi::Root
 
       end
     end
