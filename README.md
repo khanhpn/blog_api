@@ -9,3 +9,22 @@
 
 ## Starting
 - `docker-compose up`
+
+---
+
+## How to deploy server
+### SSH to server with user root
+- `root@167.71.195.60`
+
+### Switch to user deploy
+- `su - deploy`
+
+### Pull code from github
+- `cd /var/www/blog_api`
+- `git pull origin dev`
+- `docker-compose down`
+- `docker-compose up`
+
+### Restart server
+- `exit`
+- `service nginx restart`
