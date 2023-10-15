@@ -1,0 +1,11 @@
+
+<div style="display: flex;">
+
+  <%= form_with(model: task) do |form| %>
+    <%= form.check_box :completed %>
+    <%= task.description %>
+  <% end %>
+<turbo-frame id="<%= dom_id task %>">
+    <%= link_to "Edit", edit_task_path(task), class: "btn bg-gray-100" %>
+    </div>
+  </turbo-frame>

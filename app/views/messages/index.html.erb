@@ -1,0 +1,8 @@
+<%= turbo_frame_tag "new_message", target: "_top" %>
+<%= link_to "New message", new_message_path, data: { turbo_frame: "new_message" } %>
+
+<h1>Messages</h1>
+
+<div id="messages">
+  <%= render @messages %>
+</div>

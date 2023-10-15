@@ -1,0 +1,10 @@
+<%= turbo_frame_tag message do %>
+  <div id="<%= dom_id message %>">
+    <p>
+      <strong>Body:</strong>
+      <%= message.body %>
+    </p>
+    <%= link_to "Edit", edit_message_path(message) %>
+    <%= button_to "Delete", message, method: :delete, form: { data: { turbo_confirm: "Are you sure?" } } %>
+  </div>
+<% end %>
