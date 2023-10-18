@@ -1,0 +1,14 @@
+<%= turbo_frame_tag job do %>
+  <div id="<%= dom_id job %>">
+    <p>
+      <strong>Title:</strong>
+      <%= job.title %>
+    </p>
+    <p>
+      <strong>Description:</strong>
+      <%= job.description %>
+    </p>
+    <%= link_to "Edit job", edit_job_path(job) %>
+    <%= button_to "Delete job", job, method: :delete, form: { data: { turbo_confirm: "Are you sure?" } } %>
+  </div>
+<% end %>

@@ -1,0 +1,8 @@
+<%= turbo_frame_tag "new_job", target: "_top" %>
+<%= link_to "New job", new_job_path, data: { turbo_frame: "new_job" } %>
+
+<h1>Jobs</h1>
+
+<div id="jobs">
+  <%= render @jobs %>
+</div>
