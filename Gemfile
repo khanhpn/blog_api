@@ -78,7 +78,6 @@ group :test do
   gem 'rspec-json_matcher'
   gem 'rspec-rails'
   gem 'database_rewinder'
-
 end
 
 # Gem to write api
@@ -90,4 +89,4 @@ gem 'grape-entity', '~> 1.0'
 gem 'jwt', '~> 2.7', '>= 2.7.1'
 gem 'bcrypt', '~> 3.1', '>= 3.1.19'
 
-
+gem 'byebug'
